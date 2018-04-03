@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/rulesdoe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Rules"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/step1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Press the start button to begin!"
+        android:textSize="25dp"
+        android:layout_below="@+id/rulesdoe"/>
+    <TextView
+        android:id="@+id/step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Press the stop button to end spinning"
+        android:textSize="25dp"
+        android:layout_below="@+id/step1"/>
+
+    <TextView
+        android:id="@+id/step3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Cherries = 10 points!"
+        android:textSize="25dp"
+        android:layout_below="@+id/step2"/>
+    <TextView
+        android:id="@+id/step4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Three of the same = 50 points!"
+        android:textSize="25dp"
+        android:layout_below="@+id/step3"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points Earned: "
+        android:textSize="25dp"
+        android:layout_alignParentBottom="true"/>
+    <LinearLayout
+        android:id="@+id/displayPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+    </LinearLayout>
+
+</RelativeLayout>
+
+

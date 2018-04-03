@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">slot</string>
+    <string name="displayed_points">Points Earned: </string>
+    <string name="btn_start">Start</string>
+    <string name="btn_rules">Rules</string>
+    <string name="Rules">Rules Page</string>
+</resources>

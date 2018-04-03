@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.slot.slotMachineActivity">
+
+    <LinearLayout
+        android:id="@+id/fruits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop = "70dp">
+
+        <ImageView
+            android:id="@+id/fruit1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/image_background"
+            android:layout_marginRight="35dp"
+            android:padding="10dp"/>
+        <ImageView
+            android:id="@+id/fruit2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/image_background"
+            android:layout_marginRight="35dp"
+            android:padding="10dp"/>
+        <ImageView
+            android:id="@+id/fruit3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/image_background"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/startButton"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/displayed_points"
+            android:textSize="40sp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/displayPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="40sp"/>
+
+    </LinearLayout>
+
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/points"
+        android:padding="20dp"
+        android:max="10"/>
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/btn_start"
+        android:onClick="startButtonPressed"/>
+
+    <Button
+        android:id="@+id/rulesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/btn_rules"/>
+</RelativeLayout>
+
+
+
